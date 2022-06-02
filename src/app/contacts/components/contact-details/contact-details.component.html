@@ -1,0 +1,85 @@
+<!--Selected Person Info -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-lg-3">
+      <img src="{{ data?.image }}" alt="" style="width: 125px" />
+    </div>
+    <div class="col-lg-7">
+      <!-- <h4>Johanna Stevens</h4> -->
+      <h4>{{ data?.username }}</h4>
+      <p>{{ data?.designation }}</p>
+      <div class="row">
+        <div class="col-lg-5">
+          <img src="../../../../assets/icons/messges.svg" alt="" />
+        </div>
+        <div class="col-lg-2">
+          <img
+            style="width: 45px"
+            src="../../../../assets/icons/phoneicon.svg"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-2">
+          <img src="../../../../assets/icons/uparrow.svg" alt="" />
+        </div>
+        <div class="col-lg-2">
+          <img
+            style="width: 45px"
+            src="../../../../assets/icons/submenu.svg"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
+</div>
+<!-- Bio -->
+<div class="row mt-5">
+  <div class="col-2"><p class="titleColor">Bio</p></div>
+  <div class="col-10">
+    <p class="detailColor">
+      {{ data?.bio }}
+    </p>
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col-2"><p class="titleColor">Email</p></div>
+  <div class="col-10">
+    <div class="row">
+      <div class="col-4 detailColor">
+        {{ data?.email[0] }} <br />
+        {{ data?.email[1] }}
+      </div>
+      <div class="col-2 offset-6"><p class="roundedbtn">Primary</p></div>
+    </div>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col-2"><p class="titleColor">Dial</p></div>
+  <div class="col-10">
+    <div class="col-11">
+      <p class="detailColor">{{ data?.dial }}</p>
+    </div>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col-2"><p class="titleColor">Meeting</p></div>
+  <div class="col-10">
+    <p class="detailColor">{{ data?.meeting }}</p>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col-2"><p class="titleColor">Phone</p></div>
+  <div class="col-10">
+    <div class="row">
+      <div class="col-4 detailColor">
+        {{ data?.phone[0]}}<br />
+        {{ data?.phone[1]}}
+      </div>
+      <div class="col-2 offset-6"><p class="roundedbtn">Primary</p></div>
+    </div>
+  </div>
+</div>
